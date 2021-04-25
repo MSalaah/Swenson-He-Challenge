@@ -62,4 +62,4 @@ IOS Engineer Challenge
 
 ## IV. Which architecture would you use for the required task below? Why?
 
-Mvvm Because this was the required archetecture.
+Mvvm Because this was the required archetecture in this Challenge.
