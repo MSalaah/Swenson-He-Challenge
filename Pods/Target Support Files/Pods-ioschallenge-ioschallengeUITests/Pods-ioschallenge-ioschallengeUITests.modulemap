@@ -1,0 +1,6 @@
+framework module Pods_ioschallenge_ioschallengeUITests {
+  umbrella header "Pods-ioschallenge-ioschallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

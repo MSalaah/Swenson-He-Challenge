@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MasterViewController" customModule="ioschallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="currencyCodeLabel" destination="xTf-JX-pNj" id="4sY-eF-LTW"/>
+                <outlet property="currencyTextField" destination="Ma7-H8-Blr" id="kl1-jg-Cpj"/>
+                <outlet property="ratesTableView" destination="VC9-TE-eZN" id="r0I-BW-F9Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lw-by-Rfy">
+                    <rect key="frame" x="0.0" y="44" width="414" height="264"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Iso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTf-JX-pNj">
+                            <rect key="frame" x="158.5" y="121.5" width="97" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select base currency" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ma7-H8-Blr">
+                            <rect key="frame" x="10" y="10" width="394" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.078431372549019607" green="0.24705882352941178" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="264" id="IGy-Ca-Jvx"/>
+                        <constraint firstItem="xTf-JX-pNj" firstAttribute="centerX" secondItem="8lw-by-Rfy" secondAttribute="centerX" id="Ra7-Tu-oWG"/>
+                        <constraint firstItem="Ma7-H8-Blr" firstAttribute="top" secondItem="8lw-by-Rfy" secondAttribute="top" constant="10" id="mB5-je-O4v"/>
+                        <constraint firstItem="xTf-JX-pNj" firstAttribute="centerY" secondItem="8lw-by-Rfy" secondAttribute="centerY" id="nM9-ns-ZLC"/>
+                        <constraint firstAttribute="trailing" secondItem="Ma7-H8-Blr" secondAttribute="trailing" constant="10" id="zNJ-4Q-uql"/>
+                        <constraint firstItem="Ma7-H8-Blr" firstAttribute="leading" secondItem="8lw-by-Rfy" secondAttribute="leading" constant="10" id="zxH-1z-P4U"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VC9-TE-eZN">
+                    <rect key="frame" x="0.0" y="242" width="414" height="655"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VC9-TE-eZN" secondAttribute="bottom" constant="-1" id="1YZ-iR-S4w"/>
+                <constraint firstItem="VC9-TE-eZN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5Jx-wD-4nm"/>
+                <constraint firstItem="VC9-TE-eZN" firstAttribute="top" secondItem="xTf-JX-pNj" secondAttribute="bottom" constant="55.5" id="PPV-wz-DXw"/>
+                <constraint firstItem="VC9-TE-eZN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Sxc-J8-YnW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8lw-by-Rfy" secondAttribute="trailing" id="enL-NF-hl9"/>
+                <constraint firstItem="8lw-by-Rfy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hKj-Rw-CUz"/>
+                <constraint firstItem="8lw-by-Rfy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jZV-BF-erF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="115.94202898550725" y="105.80357142857143"/>
+        </view>
+    </objects>
+</document>
